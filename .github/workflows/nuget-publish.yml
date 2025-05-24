@@ -29,6 +29,6 @@ jobs:
 
       - name: Publish package to GitHub Packages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAYMENTINT_TOKEN }}
         run: |
           dotnet nuget push ./nupkg/*.nupkg --source "github" --api-key $GITHUB_TOKEN
